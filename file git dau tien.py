@@ -1,3 +1,4 @@
 print("hello")
+print("Hello. Edit from github")
 
-print("test version git")
+print("hello lần thứ 3 from local")
