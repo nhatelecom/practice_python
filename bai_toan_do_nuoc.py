@@ -8,10 +8,10 @@
 #     Nếu (a-b)>c thì: Chiều cao nước chứa được tại cột thứ i là: min(a,b) - c
     
 
-block = "211712"
+block = "31271312"
 highest_block_left_size = 0
 highest_block_right_size = 0
-block_height = 0
+current_block_height = 0
 
 sum_water = 0
 
@@ -30,8 +30,8 @@ for i in range(1,len(block)-1):
             highest_block_right_size = int(block[j])
     
     # tính lượng nước
-    block_height = int(block[i])
-    if min(highest_block_left_size,highest_block_right_size) >= block_height:
-        sum_water = sum_water + min(highest_block_left_size,highest_block_right_size) - block_height
+    current_block_height = int(block[i])
+    if min(highest_block_left_size,highest_block_right_size) > current_block_height:
+        sum_water = sum_water + min(highest_block_left_size,highest_block_right_size) - current_block_height
 
 print(sum_water)
