@@ -1,4 +1,7 @@
-import module1
+# def abc():
+#     return 1
 
-print(module1.pi)
-print(module1.e)
+# print(abc())
+
+print(1 + 2 ** 3 * 4)
+print(5**2)
