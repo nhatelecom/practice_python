@@ -26,4 +26,10 @@
 my_matrix = []#[[0,0,0],[0,0,0],[0,0,0]]
 a = [10,11]
 my_matrix.append(a)
-print(my_matrix)
+print(my_matrix)# # my_matrix = [[0]*3]*3
+# my_matrix = []#[[0,0,0],[0,0,0],[0,0,0]]
+# a = [10,11]
+# my_matrix.append(a)
+# print(my_matrix)
+
+import z

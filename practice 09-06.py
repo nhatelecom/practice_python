@@ -20,7 +20,7 @@
 # #===================================================================
 
 
-# Xuất nhập ma trận
+# === Xuất nhập ma trận ===
 
 print("Nhập kích thước ma trận A (a*b)")
 a = int(input("a = "))
