@@ -27,5 +27,3 @@
 # a = [10,11]
 # my_matrix.append(a)
 # print(my_matrix)
-
-import z
