@@ -1,0 +1,2 @@
+class KhuPho:
+    pass
