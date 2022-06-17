@@ -1,9 +1,9 @@
-from sys import implementation
 from Nguoi import Nguoi
 class HoGiaDinh:
+    family_list = []
     def __init__(self):
-        self.number_of_member = 0
         self.address = None
+        self.number_of_member = 0
         self.member_list = []
 
     def input_info(self):
@@ -23,11 +23,3 @@ class HoGiaDinh:
         print("Hộ gia đình: "+self.address)
         for member in self.member_list:
             member.output_info()
-
-a = HoGiaDinh()
-a.input_info()
-a.output_info()
-
-b = HoGiaDinh()
-b.input_info()
-b.output_info()

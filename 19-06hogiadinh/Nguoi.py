@@ -32,8 +32,4 @@ class Nguoi:
         print("Họ và Tên: "+ self.name,end="\t")
         print("CMND: "+ self.id,end="\t")
         print("Tuổi: "+ self.age,end="\t")
-        print("Công việc: "+ self.job,end="\t")
-
-
-a=Nguoi()
-a.output_info()
+        print("Công việc: "+ self.job)
