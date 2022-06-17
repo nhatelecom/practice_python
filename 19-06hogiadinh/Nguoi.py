@@ -33,3 +33,4 @@ class Nguoi:
         print("CMND: "+ self.id,end="\t")
         print("Tuổi: "+ self.age,end="\t")
         print("Công việc: "+ self.job)
+
