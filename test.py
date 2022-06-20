@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 rows, cols = 3,3
 my_matrix = [([0]*cols) for i in range(rows)]
 
@@ -9,7 +8,10 @@ for i in range(3):
         n+=1
 
 print(my_matrix)
-=======
+
+'''======='''
+
+
 # set_a = {1,2,2,3,2,4,4,5,7}
 
 # print(set_a)
@@ -38,6 +40,3 @@ print(my_matrix)
 # print("Diện tích của hình tròn có bán kính = {r} là {s}".format(r=r, s=s))
 
 '''-------------------------------------------------------------------------'''
-
-huawei
->>>>>>> dc6c91c39eb3b4302964870970979c3e5d2c8039
