@@ -144,18 +144,45 @@
 
 '''-----------------------------------------------------------'''
 
-import turtle
-import time
-r = 200
+# import turtle
+# import time
+# r = 200
 
-# turtle.left(45)
-turtle.circle(r,90)    # Long curved part
-time.sleep(2)
-turtle.circle(r/3,90)  # Short curved part
+# # turtle.left(45)
+# turtle.circle(r,90)    # Long curved part
+# time.sleep(2)
+# turtle.circle(r/3,90)  # Short curved part
 
-# turtle.left(45)
-# for loop in range(2):      # Draws 2 halves of ellipse
-#     turtle.circle(r,90)    # Long curved part
-#     turtle.circle(r/3,90)  # Short curved part
+# # turtle.left(45)
+# # for loop in range(2):      # Draws 2 halves of ellipse
+# #     turtle.circle(r,90)    # Long curved part
+# #     turtle.circle(r/3,90)  # Short curved part
 
-turtle.exitonclick()
+# turtle.exitonclick()
+
+'''---------------------------------------------------'''
+import tkinter as tk
+
+window = tk.Tk()
+
+def save(event):
+    print("save pressed")
+    lbl.config(text="save pressed")
+
+def log(event):
+    print(event)
+    lbl2.config(text="logged")
+
+save_btn = tk.Button(window, text="Save")
+save_btn.pack()
+save_btn.bind("<Return>", save)
+# save_btn.bind("<Return>", log)
+save_btn.bind("<Return>", log, add= '+')
+
+lbl = tk.Label(window, text = '')
+lbl2 = tk.Label(window, text = '')
+lbl.pack()
+lbl2.pack()
+save_btn.focus()
+
+window.mainloop
