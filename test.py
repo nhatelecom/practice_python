@@ -161,28 +161,53 @@
 # turtle.exitonclick()
 
 '''---------------------------------------------------'''
-import tkinter as tk
+# import tkinter as tk
 
-window = tk.Tk()
+# window = tk.Tk()
 
-def save(event):
-    print("save pressed")
-    lbl.config(text="save pressed")
+# def save(event):
+#     print("save pressed")
+#     lbl.config(text="save pressed")
 
-def log(event):
-    print(event)
-    lbl2.config(text="logged")
+# def log(event):
+#     print(event)
+#     lbl2.config(text="logged")
 
-save_btn = tk.Button(window, text="Save")
-save_btn.pack()
-save_btn.bind("<Return>", save)
-# save_btn.bind("<Return>", log)
-save_btn.bind("<Return>", log, add= '+')
+# save_btn = tk.Button(window, text="Save")
+# save_btn.pack()
+# save_btn.bind("<Return>", save)
+# # save_btn.bind("<Return>", log)
+# save_btn.bind("<Return>", log, add= '+')
 
-lbl = tk.Label(window, text = '')
-lbl2 = tk.Label(window, text = '')
-lbl.pack()
-lbl2.pack()
-save_btn.focus()
+# lbl = tk.Label(window, text = '')
+# lbl2 = tk.Label(window, text = '')
+# lbl.pack()
+# lbl2.pack()
+# save_btn.focus()
 
-window.mainloop
+# window.mainloop
+
+'''---------------------------------------------------'''
+# i = 0
+# j = 20
+
+# while True:
+#     j -= 2
+#     i += 3
+#     if i >= j:
+#         break
+#     if j > 15:
+#         continue
+#     print(i, j, sep='', end='')
+# else:
+#     print(j, end='')
+# print('a')
+
+'''---------------------------------------------------------'''
+
+for letter in 'Python': 
+   if letter == 'h':
+      pass
+      print ('This is pass block')
+   print ('Current Letter :' ,letter)
+print ("Good bye!")
