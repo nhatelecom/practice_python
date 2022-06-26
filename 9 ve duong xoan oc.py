@@ -1,6 +1,3 @@
-from calendar import c
-
-
 # Vẽ đường xoắn ốc
 # Dừng lại khi khoảng cách từ điểm ban đầu đến điểm vẽ lớn hơn 1 số định trước
 
@@ -12,7 +9,7 @@ import turtle as pen
 # screen.screensize(width, height)
 
 pen.speed = 10
-max_distance
+max_distance = 100
 
 d=0.5
 while True:
