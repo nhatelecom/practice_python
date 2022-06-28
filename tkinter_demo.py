@@ -15,13 +15,14 @@ my_label = tk.Label(
     padx = 100,
     pady = 100,
     # Tìm hiểu padding, border, margin
-    relief="solid"
+    relief="solid",
+
 )
 my_label.pack()
 
 my_list = ["hs1","hs2","hs3","hs4","hs5"]
 
 for i in range (len(my_list)):
-    my_label = tk.Label(window, text = my_list[i]).pack()
+    my_label2 = tk.Label(window, text = my_list[i],anchor="s").pack()
 
 window.mainloop()
