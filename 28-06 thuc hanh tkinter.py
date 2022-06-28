@@ -1,7 +1,17 @@
 import tkinter as tk
 
+
+
 def add_phonenumber_func():
+    name = entry_name.get()
     phonenumber = entry_phonenumber.get()
+    print(name,phonenumber)
+    f = open("demofile3.txt", "a", encoding="utf-8")
+    f.write(name)
+    f.write(";")
+    f.write(phonenumber)
+    f.write("\n")
+    f.close()
 
 
 window = tk.Tk()
