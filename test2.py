@@ -24,17 +24,18 @@
 
 # root.mainloop()
 
+import math
+from time import sleep
 
-def cal(a, b=3):
+print(math.e)
 
-    sum = a + b
+# for i in range(1,50000000,5000):
+#     e_calculate = (1+1/i)**i
+#     print(i)
+#     print(e_calculate)
+#     sleep(0.01)
+#     print ("\033[A                             \033[A                             \033[A")
 
-    sub = a - b
-
-    mul = a * b
-
-    return sum, sub, mul
-
-s, sub, mul = cal(6)
-
-print(s, mul, sub)
+e_calculate = (1+1/100000000000)**100000000000
+print(100000000000)
+print(e_calculate)
