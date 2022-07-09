@@ -1,14 +1,18 @@
 class Book:
     book_id_list = []
     def __init__(self):
-        self.input_info()
+        # self.input_info()
+        self.book_id = ''
+        self.book_title = ''
+        self.book_author = ''
+        self.book_quantity = ''
         
     def input_info(self):
-        self.book_title = input("Nhập tên sách: ")
         self.book_id = input("Nhập ID sách: ")
         while self.book_id in self.book_id_list:
             self.book_id = input("Nhập lại ID sách: ")
         Book.book_id_list.append(self.book_id)
+        self.book_title = input("Nhập tên sách: ")
         self.book_author = input("Nhập tên tác giả: ")
         self.book_quantity = input("Nhập số lượng: ")
 

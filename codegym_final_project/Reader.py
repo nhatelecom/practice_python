@@ -1,7 +1,10 @@
 class Reader:
     reader_id_list = []
     def __init__(self):
-        self.input_info()
+        # self.input_info()
+        self.reader_id = ''
+        self.reader_name = ''
+
         
     def input_info(self):
         self.reader_id = input("Nhập ID độc giả: ")
