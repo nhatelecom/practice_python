@@ -38,7 +38,22 @@ def quan_ly_sach():
                     break
         elif user_input == '4':
             print("HOME\QUẢN LÝ SÁCH\XÓA THÔNG TIN SÁCH")
-        elif user_input == '0':
+            id_sach_can_xoa = input("Nhập ID sách cần xóa: ")
+            counter = 0     # Vị trí sách cần xóa
+            found_book = False # =True nếu tìm ra sách cần xóa
+            for book in book_list:
+                if book.book_id == id_sach_can_xoa:
+                    found_book = True
+                    break
+                else:
+                    counter += 1
+            
+            if found_book:
+                del book_list[counter]
+                print("Đã xóa sách này!")
+            else:
+                print("Không tìm thấy sách có ID này")
+        elif user_input == '0': # Thoát lên mục trên
             break
 
 def quan_ly_hoi_vien():

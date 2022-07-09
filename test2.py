@@ -1,13 +1,14 @@
-book_list = [1,2,5]
-book_list2 = []
-counter = 0
-a=4
+a_list = ["abc", "def", "ghi"]
 
-for book in book_list:
-    if a < book:
-        book_list.insert(counter,a)
-        break
-    counter +=1
+textfile = open("a_file.txt", "w")
 
-print(book_list)
-print(book_list2==[])
+for element in a_list:
+
+    textfile.write(element + "\n")
+
+textfile.close()
+
+f = open("a_file.txt","r")
+lines = f.readlines()
+
+print(lines)
