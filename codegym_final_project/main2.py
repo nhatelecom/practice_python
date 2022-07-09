@@ -147,8 +147,6 @@ def quan_ly_muon_sach():
                 for book in book_list:
                     if book.book_id == book_id:
                         book_title = book.book_title
-                
-                
                 print(reader_name,"-",book_title,end="\n")
             print("---------------------------------------------------------------------------------------")
         elif user_input == '2':
@@ -159,6 +157,7 @@ def quan_ly_muon_sach():
             for reader in reader_list:
                 if reader.reader_id == id_reader_borrow:
                     found_reader = True
+                    print("Người mượn: "+reader.reader_name)
                     break
             if not found_reader:
                 print("->Không tìm thấy ID độc giả này.")
@@ -168,6 +167,7 @@ def quan_ly_muon_sach():
                 for book in book_list:
                     if book.book_id == id_book_borrow:
                         found_book = True
+                        print("Sách mượn: "+book.book_title)
                         break
                 if not found_book:
                     print("->Không tìm thấy ID sách này.")
@@ -179,6 +179,17 @@ def quan_ly_muon_sach():
                 print("Đã thêm lượt mượn sách.")
         elif user_input == '3':
             print("HOME\QUẢN LÝ MƯỢN SÁCH\TRẢ SÁCH")
+
+            id_reader_return = input("Nhập ID người trả sách: ")
+            id_book_return = input("Nhập ID sách cần trả: ")
+            return_record = [id_reader_return,id_book_return]
+
+            if return_record not in borrow_list:
+                print("Không có bản ghi mượn sách này.")
+            else:
+                print("Trả sách thành công")
+                borrow_list.remove(return_record)
+
         elif user_input == '0':
             break
         # reader_id = input("")
@@ -243,7 +254,7 @@ reader_list.append(reader3)
 Reader.reader_id_list.append(reader1.reader_id)
 Reader.reader_id_list.append(reader3.reader_id)
 
-borrow_list = [['1','1'],['1','5'],['3','5'],['3','6'],['3','7']]
+borrow_list = [['1','1'],['3','5'],['3','6']]
 
 '''---CHƯƠNG TRÌNH CHÍNH Ở ĐÂY---'''
 print("""****************************************
@@ -264,4 +275,3 @@ while True:
     elif user_input == '0':
         print("Goodbye!")
         break
-
