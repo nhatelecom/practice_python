@@ -1,15 +1,13 @@
-from tkinter import *
+book_list = [1,2,5]
+book_list2 = []
+counter = 0
+a=4
 
-root = Tk()
-root.geometry('500x500')
-root.title('Good morning :)')
+for book in book_list:
+    if a < book:
+        book_list.insert(counter,a)
+        break
+    counter +=1
 
-frame1 = Frame(root, bg='green')
-frame1.pack(expand=True, fill=BOTH)
-
-button1 = Button(frame1, text='Hello1')
-button1.pack(side=RIGHT)
-button2 = Button(frame1, text='Hello2')
-button2.pack(side=TOP)
-
-root.mainloop()
+print(book_list)
+print(book_list2==[])
