@@ -205,13 +205,10 @@
 
 '''---------------------------------------------------------'''
 
-sum = 0
+for l in 'Jhon':
 
-values = [1,3,5,7]
+   if l == 'o':
 
-for number in values:
-    if number == 5:
-        pass
-        sum = sum + number
+      pass
 
-print(sum)
+   print(l, end=', ')
