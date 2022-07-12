@@ -30,6 +30,8 @@ def quan_ly_sach():
                     if int(new_book.book_id) > int(book.book_id):
                         counter += 1
                 book_list.insert(counter,new_book)
+                for ele in book_list:
+                    print(ele)
         elif user_input == '3':
             print("HOME\QUẢN LÝ SÁCH\SỬA THÔNG TIN SÁCH")
             id_sach_can_sua = input("Nhập ID sách cần sửa: ")
@@ -59,7 +61,16 @@ def quan_ly_sach():
                 book_list[counter].output_info()
                 del book_list[counter]
                 del Book.book_id_list[counter]
+                # book_list.remove(id_sach_can_xoa)
+                # Book.book_id_list.remove(id_sach_can_xoa)
                 print("-> Đã xóa sách này!")
+                print("Hiện tại còn:")
+                for element in book_list:
+                    print(element,end=',')
+                    print("\n")
+                for element in Book.book_id_list:
+                    print(element,end=',')
+                    print("\n")
             else:
                 print("-> Không tìm thấy sách có ID này")
         elif user_input == '0': # Thoát lên mục trên
