@@ -12,5 +12,5 @@ while True:
     if last_digit != 0:
         break
 
-
+return last_digit
 print(last_digit)
