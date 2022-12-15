@@ -2,12 +2,10 @@
 # Lấy giá trị lớn nhất trừ cho tất cả giá trị trong list. KQ sẽ là dãy số không dương
 # Tìm vị trí của số khác 0 và lớn nhất là được
  
-s = input()
+s = '8 3 8 1 5 6 70'
 
-num_list = []
-for i in range(len(s)):
-    if i%2==0:
-        num_list.append(int(s[i]))
+num_list = s.split(' ')
+num_list = list(map(int, num_list))
 
 if len(num_list)==1:
     result = -1
@@ -25,4 +23,5 @@ else:
     
     result = num_list.index(max(num_list))
 
-return result
+print(result)
+# return result

@@ -5,16 +5,16 @@ count = 0
 a_new= list(dict.fromkeys(a)) # xoá ký tự trùng nhau
 b_new= list(dict.fromkeys(b)) # xoá ký tự trùng nhau
 
-print(a)
-print(a_new)
+# print(a)
+# print(a_new)
 
-print(b)
-print(b_new)
+# print(b)
+# print(b_new)
 
-for i in range(len(a_new)):
+for i in range(len(a_new)+1):
     if a_new[i] in b:
         count += 1
 
-print(count)
+# print(count)
 
-# return count
+return count
