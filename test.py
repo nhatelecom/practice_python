@@ -205,10 +205,15 @@
 
 '''---------------------------------------------------------'''
 
-for l in 'Jhon':
+# for l in 'Jhon':
 
-   if l == 'o':
+#    if l == 'o':
 
-      pass
+#       pass
 
-   print(l, end=', ')
+#    print(l, end=', ')
+
+
+sum = 1
+sum = sum +1
+print(sum)
